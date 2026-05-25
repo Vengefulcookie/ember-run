@@ -1,0 +1,68 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #0a0a0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+#game-container {
+    position: relative;
+    border: 4px solid #2a1a0a;
+    box-shadow: 0 0 40px rgba(255, 140, 0, 0.08), inset 0 0 30px rgba(0, 0, 0, 0.6);
+    line-height: 0;
+}
+
+#game-canvas {
+    display: block;
+    background-color: #0d0d18;
+}
+
+#hud {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    color: #ffaa44;
+    text-shadow: 0 0 6px rgba(255, 140, 0, 0.4);
+    pointer-events: none;
+    z-index: 10;
+    letter-spacing: 1px;
+}
+
+.app-footer {
+    padding: 5px 0 0 0;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 12px;
+    color: #665544;
+}
+
+.app-footer strong {
+    color: #887766;
+}
+
+.app-footer a {
+    color: #887766;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.app-footer a:hover {
+    color: #ffaa44;
+}
